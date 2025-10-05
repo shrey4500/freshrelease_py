@@ -1,0 +1,11 @@
+runtime: python
+
+   build:
+     install: pip install -r requirements.txt
+
+   startCommand:
+     command: python
+     args:
+       - server.py
+     env:
+       - FRESHRELEASE_API_TOKEN
